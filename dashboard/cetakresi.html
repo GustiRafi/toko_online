@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tampilan Resi</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .resi-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .info-label {
+      font-weight: bold;
+    }
+
+    .info-value {
+      flex-grow: 1;
+      text-align: right;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .total {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Toko Online</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div class="resi-info">
+      <div class="info-label">Nomor Resi:</div>
+      <div class="info-value">123456789</div>
+    </div>
+    <div class="resi-info">
+      <div class="info-label">Tanggal:</div>
+      <div class="info-value">29 Mei 2023</div>
+    </div>
+    <div class="resi-info">
+      <div class="info-label">Pengirim:</div>
+      <div class="info-value">John Doe</div>
+    </div>
+    <div class="resi-info">
+      <div class="info-label">Penerima:</div>
+      <div class="info-value">Jane Smith</div>
+    </div>
+    <div class="resi-info">
+      <div class="info-label">Status:</div>
+      <div class="info-value">Dalam Pengiriman</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Barang</th>
+          <th>Jumlah</th>
+          <th>Harga Barang</th>
+          <th>Total Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Barang 1</td>
+          <td>2</td>
+          <td>Rp 50.000</td>
+          <td>Rp 100.000</td>
+        </tr>
+        <tr>
+          <td>Barang 2</td>
+          <td>1</td>
+          <td>Rp 75.000</td>
+          <td>Rp 75.000</td>
+        </tr>
+        <tr>
+          <td>Barang 3</td>
+          <td>3</td>
+          <td>Rp 30.000</td>
+          <td>Rp 90.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" class="total">Total Harga:</td>
+          <td class="total">Rp 265.000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script>
+    window.print();
+  </script>
+</body>
+</html>
